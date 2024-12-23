@@ -21,26 +21,11 @@ body {
     border: 3px solid rgba(0, 0, 0, 0.52);
 }
 
-/* .screen {
-    width: 230px;
-    height: 80px;
-    background-color: rgba(0, 128, 0, 0.759);
-    border-radius: 5px;
-    margin: 20px 22px;
-    border: 2px solid black;
-
-} */
-
-input{
-    width: 230px;
-    height: 80px;
-    background-color: gainsboro;
-    border-radius: 5px;
-    margin: 20px 22px;
-    border: 2px solid black;
-    font-size: 15px;
-    outline:none ;
-    padding: 13px;
+#display{
+    font-size: 30px;
+   border: 2px solid #000;
+   padding: 65px 0 0 200px;
+    
 }
 
 .buttons {
@@ -107,6 +92,3 @@ input{
     margin: 10px 20px;
 }
 
-form{
-    border: none;
-}

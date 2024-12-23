@@ -4,44 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="./first_project.css">
 </head>
 
 <body>
     <section class="container">
         <form action="">
-            <div class="input"></div>
-
+            <div class="input" id="display"></div>
         </form>
         <div class="buttons">
-            <button class="black redDy">C</button>
-            <button class="black">%</button>
-            <button class="black">^</button>
-                    <button class="grey divide">/</button>
-                    <button class="hash seven">7</button>
-                    <button class="hash eight">8</button>
-                    <button class="hash nine">9</button>
-                    <button class="grey hexs">&times;</button>
-                    <button class="hash four">4</button>
-                    <button class="hash five">5</button>
-                    <button class="hash six">6</button>
-                    <button class="grey minus">-</button>
-                    <button class="hash one">1</button>
-                    <button class="hash two">2</button>
-                    <button class="hash three">3</button>
-                    <button class="grey plus">+</button>
+            <button class="black redDy" data-value="C">C</button>
+            <button class="black" data-value="%">%</button>
+            <button class="black" data-value="^">^</button>
+                    <button class="grey divide" data-value="/">/</button>
+                    <button class="hash seven" data-value="7">7</button>
+                    <button class="hash eight" data-value="8">8</button>
+                    <button class="hash nine" data-value="9">9</button>
+                    <button class="grey hexs" data-value="*">&times;</button>
+                    <button class="hash four" data-value="4">4</button>
+                    <button class="hash five" data-value="5">5</button>
+                    <button class="hash six" data-value="6">6</button>
+                    <button class="grey minus" data-value="-">-</button>
+                    <button class="hash one" data-value="1">1</button>
+                    <button class="hash two" data-value="2">2</button>
+                    <button class="hash three" data-value="3">3</button>
+                    <button class="grey plus" data-value="+">+</button>
 
         </div>
         <div class="second">
-            <button class="grey period">.</button>
-            <button class="hash zero">0</button>
-            <button class="orange equalsTo">=</button>
+            <button class="grey period" data-value=".">.</button>
+            <button class="hash zero" data-value="0">0</button>
+            <button class="orange equalsTo" data-value="=">=</button>
         </div>
 
     </section>
 
-    <!-- <script src="first_project.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
