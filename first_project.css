@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 255, 0, 0.424);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(128, 128, 128, 0.879);
+    width: 280px;
+    height: 390px;
+    border-radius: 7px;
+    border: 3px solid rgba(0, 0, 0, 0.52);
+}
+
+/* .screen {
+    width: 230px;
+    height: 80px;
+    background-color: rgba(0, 128, 0, 0.759);
+    border-radius: 5px;
+    margin: 20px 22px;
+    border: 2px solid black;
+
+} */
+
+input{
+    width: 230px;
+    height: 80px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin: 20px 22px;
+    border: 2px solid black;
+    font-size: 15px;
+    outline:none ;
+    padding: 13px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 20px 0px 20px;
+    gap: 6px;
+}
+
+.input{
+    width: 230px;
+    margin: 20px 30px 20px 22px;
+    margin-bottom: 18px;
+    height: 100px;
+    border: 2px solid #000;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 50px;
+    height: 40px;
+}
+
+.redDy{
+    background-color: red;
+    border: none;
+}
+
+.grey {
+    background-color: rgba(0, 0, 0, 0.731);
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+    color: white;
+    width: 50px;
+    height: 40px;
+}
+
+.hash {
+    background-color: rgba(0, 0, 0, 0.545);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 50px;
+    height: 40px;
+}
+
+.orange {
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    font-size: 20px;
+}
+
+.second {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    margin: 10px 20px;
+}
+
+form{
+    border: none;
+}
