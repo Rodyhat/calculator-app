@@ -5,90 +5,102 @@
 }
 
 body {
-    background-color: rgba(255, 255, 0, 0.424);
+    background-color: rgba(255, 255, 0, 0.4); /* Slightly transparent yellow */
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
-    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    background-color: rgba(128, 128, 128, 0.879);
-    width: 280px;
-    height: 390px;
-    border-radius: 7px;
-    border: 3px solid rgba(0, 0, 0, 0.52);
+    background-color: rgba(128, 128, 128, 0.9); /* Slightly transparent grey */
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-#display{
-    font-size: 30px;
-   border: 2px solid #000;
-   padding: 65px 0 0 200px;
-    
+#display {
+    font-size: 24px;
+    text-align: right;
+    padding: 20px;
+    height: 80px;
+    border-bottom: 2px solid #000;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 20px 0px 20px;
-    gap: 6px;
+    padding: 10px 15px;
+    gap: 10px;
+    flex-grow: 1;
 }
 
-.input{
-    width: 230px;
-    margin: 20px 30px 20px 22px;
-    margin-bottom: 18px;
-    height: 100px;
+.input {
+    width: calc(100% - 40px); /* Account for padding inside the container */
+    margin: 10px auto;
+    height: 80px;
     border: 2px solid #000;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .black {
     background-color: black;
     color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 18px;
-    width: 50px;
-    height: 40px;
 }
 
-.redDy{
+.redDy {
     background-color: red;
-    border: none;
+    color: white;
 }
 
 .grey {
-    background-color: rgba(0, 0, 0, 0.731);
-    border-radius: 5px;
-    font-size: 18px;
-    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    width: 50px;
-    height: 40px;
 }
 
 .hash {
-    background-color: rgba(0, 0, 0, 0.545);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 18px;
-    width: 50px;
-    height: 40px;
 }
 
 .orange {
     background-color: orange;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: black;
+    color: white;
     font-size: 20px;
+    grid-column: span 2;
+    height: 50px;
 }
 
 .second {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 2fr;
-    margin: 10px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px 15px;
 }
-
